@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAE Listening and Writing Test</title>
+<style>
+  :root{
+    --bg:#0f1115;       /* charcoal */
+    --card:#171a20;     /* panel */
+    --ink:#f2f5f7;      /* main text */
+    --muted:#98a2b3;    /* secondary text */
+    --accent:#ff6b00;   /* highlight */
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+    color:var(--ink); background:linear-gradient(180deg,#0b0d12, var(--bg));
+    line-height:1.55;
+  }
+  header{padding:28px 18px 12px; text-align:center;}
+  h1{margin:.2rem 0 .25rem; font-size:1.6rem}
+  p.sub{margin:0;color:var(--muted);font-size:.95rem}
+  .wrap{max-width:920px; margin:0 auto; padding:12px 16px 40px;}
+  .card{
+    background:var(--card); border:1px solid #222833; border-radius:var(--radius);
+    box-shadow:0 8px 30px rgba(0,0,0,.25); overflow:hidden;
+    margin-bottom: 30px;
+  }
+  .section{padding:18px 18px}
+  .section + .section{border-top:1px solid #222833}
+  .audio-bar{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+  audio{width:100%; max-width:100%; outline:none}
+  .badge{
+    background:#1e2633; color:var(--muted); border:1px solid #273248;
+    padding:6px 10px; border-radius:999px; font-size:.85rem
+  }
+  .passage{
+    background:#12151b; border:1px solid #222833; padding:16px; border-radius:12px;
+  }
+  .input{
+    display:inline-flex; align-items:center; margin:0 4px;
+    border:1px solid #273248; border-radius:10px; padding:2px 6px; background:#0f131a;
+  }
+  .input input{
+    background:transparent; border:none; color:var(--ink); outline:none;
+    min-width:80px; padding:6px 2px; font-size:1rem;
+  }
+  .num{
+    background:#1e2633; color:var(--muted); border:1px solid #273248;
+    font-size:.8rem; padding:2px 6px; border-radius:6px;
+  }
+  .readonly{opacity:.8; background:#0f131a; border-style:dashed;}
+  textarea {
+    width: 100%;
+    min-height: 240px;
+    background:#0f131a;
+    border:1px solid #273248;
+    border-radius:12px;
+    padding:12px;
+    font-size:1rem;
+    color:var(--ink);
+    resize: vertical;
+  }
+  @media (max-width:680px){
+    h1{font-size:1.25rem}
+    .input input{min-width:68px}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>CAE Listening and Writing Test</h1>
+    <p class="sub">Part 1: Listening – Open Cloze | Part 2: Writing – Essay</p>
+  </header>
+
+  <p style="text-align:center">(You will hear a 1 minute monolog which is actually an essay being read aloud)</p>
+
+  <!-- PART 1 LISTENING -->
+  <div class="wrap">
+    <div class="card">
+      <div class="section">
+        <div class="audio-bar">
+          <span class="badge">AUDIO</span>
+          <!-- Replace src with your file -->
+          <audio id="player" controls preload="metadata" src="essaymonolog.mp3"></audio>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="badge">PART 1 – LISTENING PASSAGE</div>
+        <div class="passage">
+          <p>
+            The decision between living in a house or an apartment raises questions about space, autonomy, and convenience. 
+            In many cities, rising costs and limited land availability have made apartment living increasingly common 
+            <span class="num">0</span> <span class="input readonly"><input value="among" disabled /></span> younger professionals. 
+            However, houses continue to appeal to those seeking privacy, outdoor areas, and long-term investment 
+            <span class="num">1</span> <span class="input"><input></span>. 
+            This essay will discuss both 
+            <span class="num">2</span> <span class="input"><input></span> 
+            and lifestyle factors.  
+          </p>
+
+          <p>
+            Living in a house offers the best of both 
+            <span class="num">3</span> <span class="input"><input></span> 
+            for those seeking comfort and independence. 
+            It <span class="num">4</span> <span class="input"><input></span> 
+            greater control over their environment and long-term 
+            <span class="num">5</span> <span class="input"><input></span> 
+            stability.
+          </p>
+
+          <p>
+            On the other hand, apartments can reduce commute times, drawing 
+            <span class="num">6</span> <span class="input"><input></span> 
+            shared infrastructure such as public transport. In addition, many young people 
+            <span class="num">7</span> <span class="input"><input></span> 
+            it difficult to save money to secure a mortgage.
+          </p>
+
+          <p>
+            Taking everything into 
+            <span class="num">8</span> <span class="input"><input></span>, 
+            apartments offer practical advantages for many urban dwellers. 
+            Having said 
+            <span class="num">9</span> <span class="input"><input></span>, 
+            the appeal of a standalone house offer more privacy and space. 
+            Ultimately, the decision hinges on personal 
+            <span class="num">10</span> <span class="input"><input></span> 
+            and long-term goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PART 2 WRITING -->
+  <div class="wrap">
+    <div class="card">
+      <div class="section">
+        <div class="badge">PART 2 – WRITING</div>
+        <h2>Essay Task</h2>
+        <p><em>You must answer this question. Write your answer in 220–260 words in an appropriate style.</em></p>
+
+        <p>Your class has had a discussion about the advantages and disadvantages of different places to live. 
+        You have made the notes below:</p>
+
+        <ul>
+          <li><strong>Living in the city versus living in the country</strong></li>
+          <li>employment opportunities</li>
+          <li>lifestyle and leisure</li>
+          <li>environment</li>
+        </ul>
+
+        <p>Some opinions expressed in the discussion:</p>
+        <blockquote>
+          “There are always more jobs and better career prospects in the city.”<br>
+          “Life in the country is healthier and less stressful.”<br>
+          “Cities offer more cultural activities and chances to meet new people.”
+        </blockquote>
+
+        <p><strong>Write an essay discussing two of the factors in your notes. You should explain which place — the city or the country — you think is better overall for young people, giving reasons in support of your answer.</strong></p>
+
+        <textarea placeholder="Write the first paragraph on the paper your teacher has given you. Write one paragraph of 60 to 80 words."></textarea>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
